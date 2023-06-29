@@ -3,7 +3,7 @@ body {
 }
 .nav {
     display: flex;
-    background-color: rgb(237, 232, 232);
+    background-color: rgb(201, 214, 141);
     color: rgb(155, 34, 34);
     height: 60px;
     justify-content: space-between;

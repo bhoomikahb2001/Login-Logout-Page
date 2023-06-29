@@ -12,7 +12,8 @@ function Login(props) {
         padding:"30px",
         textAlign:"center",
         margin:"50px auto 20px",
-        boxShadow:"0 0 10px black"
+        backgroundColor: "pink",
+        borderRadius:"10px"
     }
     const handleAuthentication = ()=>{
         if(user.username==="Bhoomi" && user.password==="Bhoomi@13"){
@@ -23,21 +24,21 @@ function Login(props) {
     }
     return (
         <div style={style}>
-            <h2>Login Form</h2>
+            <h2 style={{color:"purple"}}>Login Form</h2>
             <div>
-                <input type="text" placeholder='username' onChange={(e)=>{setUser({
+                <input style={{width:"200px", height:"20px", fontSize:"15px"}} type="text" placeholder='username' onChange={(e)=>{setUser({
                     ...user,
                     username:e.target.value
                 })}} />
             </div><br></br>
             <div>
-                <input type="password" placeholder='password' onChange={(e)=>{setUser({
+                <input style={{width:"200px", height:"20px", fontSize:"15px"}} type="password" placeholder='password' onChange={(e)=>{setUser({
                     ...user,
                     password:e.target.value
                 })}}/>
             </div><br></br>
             <div>
-                <input type="button" value="Login" onClick={handleAuthentication} />
+                <input style={{color:"white", background:"green", border:"none", fontWeight:"bolder", padding:"8px", fontSize:"15px", borderRadius:"5px"}} type="button" value="Login" onClick={handleAuthentication} />
             </div>
         </div>
     );

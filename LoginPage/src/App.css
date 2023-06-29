@@ -1,5 +1,10 @@
 .App {
- padding:30px;
- text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 0;
 }
 

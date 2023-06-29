@@ -15,7 +15,7 @@ function Nav(props) {
                 <a href="#">Profile</a>
                 <a href="#">Support</a>
                 {isloggedin ? (
-                    <button 
+                    <button
                         onClick={() => {
                             logout();
                         }}
